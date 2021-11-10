@@ -1,0 +1,221 @@
+// .recent-posts {
+//   padding: 25px 0 0 0;
+//   // background: #EDF7FA;
+//   background: rgb(228, 210, 210);
+
+
+//   // .recent-posts__container
+//   &__container {}
+
+//   // .recent-posts__header
+//   &__header {
+//     display: flex;
+//     margin: 0 0 20px 0;
+
+//   }
+
+//   // .recent-posts__title
+//   &__title {
+//     padding: 20px 0 0 0; // Чтобы при большом тексте не слипся к правому тексту
+//     flex: 1 1 auto;
+//   }
+
+//   // .recent-posts__view-all
+//   &__view-all {
+//     word-spacing: nowrap; // Или FLEX 0 0 AUTO;
+//     font-size: 16px;
+//     line-height: 23px;
+//     color: #00A8CC;
+
+//     @media (max-width: $md3 + px) {
+//       display: none;
+//     }
+//   }
+
+//   // .recent-posts__items
+//   &__items {
+//     display: flex;
+//     margin: 0 -10px;
+//   }
+
+//   // .recent-posts__column
+//   &__column {
+//     flex: 0 1 50%;
+//     padding: 24px 23px;
+//   }
+
+//   // .recent-posts__item
+//   &__item {
+//     background: #FFFFFF;
+//     box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+//     border-radius: 4px;
+
+//   }
+
+//   &__title {
+//     font-weight: bold;
+//     font-size: 26px;
+//     line-height: 38 / 26 * 100%;
+//     color: inherit;
+
+//     @media (min-width: $md2 + px) {
+//       &:hover {
+//         color: #ff6464
+//       }
+//     }
+//   }
+
+//   // .recent-posts__info
+//   &__info {
+//     font-size: 18px;
+//     line-height: 26px;
+//     color: inherit;
+//   }
+
+//   // .recent-posts__text
+//   &__text {}
+// }
+
+
+
+
+
+
+
+// ==========================================
+.recent-posts {
+  background: #d2dcdf;
+  padding: 28px 0 15px 0;
+  // background: #EDF7FA;
+
+  @media (max-width: $md3 + px) {
+    padding: 28px 0 23px 0;
+  }
+
+  // .recent-posts__container
+
+  &__container {}
+
+  // .recent-posts__header
+
+  &__header {
+    display: flex;
+    margin: 0 0 32px 0;
+
+  }
+
+  // .recent-posts__title
+
+  &__title {
+    flex: 1 1 auto;
+    font-size: 16px;
+    line-height: 23/16*100%;
+    color: #21243D;
+    margin: 0 0 0px -10px; //!!! FIX THIS BUG
+
+  }
+
+  // .recent-posts__view-all
+
+  &__view-all {
+    font-size: 16px;
+    line-height: 23/16*100%;
+    text-align: right;
+    color: #00A8CC;
+
+    @media (max-width: $md3 + 'px') {
+      display: none;
+    }
+  }
+}
+
+
+
+
+.recent-post {
+  height: 100%; // Если текста будет много
+
+  // .recent-post__items
+  &__items {
+    margin: 0 -10px;
+
+    @media (min-width: $md3 + px) {
+      display: flex;
+    }
+
+  }
+
+  // .recent-post__column
+
+  &__column {
+    flex: 0 1 50%;
+    padding: 0 20px;
+
+    margin: 0 0 17px 0;
+
+
+  }
+
+  // .recent-post__item
+
+  &__item {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+    border-radius: 4px;
+    padding: 20px;
+
+    @media (max-width: $md3 + px) {
+      padding: 15px;
+    }
+  }
+
+  // .recent-post__title
+
+  &__title {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 38/26*100%;
+    color: #21243D;
+    transition: color 0.3s ease 0s;
+    margin: 0 0 17px 0;
+
+    @media (max-width: $md3 + px) {
+      font-size: 22px;
+      margin: 0 0 10px 0;
+
+    }
+
+
+    @media (min-width: $md2 + px) {
+      &:hover {
+        color: #ff6464;
+      }
+    }
+  }
+
+  // .recent-post__info
+
+  &__info {
+    font-size: 18px;
+    margin: 0 0 15px 0;
+
+    line-height: 26/18*100%;
+    color: #21243D;
+
+    span {
+      margin: 0 17px;
+    }
+
+
+    @media (max-width: $md3 + px) {
+      font-size: 16px;
+      margin: 0 0 10px 0;
+
+    }
+  }
+
+  // .recent-post__text
+
+  &__text {}
+}

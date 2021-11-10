@@ -1,0 +1,92 @@
+//========================ОСНОВНОЙ БЛОК===========================================
+
+.page {
+  padding: 90px 0px 0px 0px;
+  flex: 1 1 auto;
+
+  @media (max-width: $md3+px) {
+    padding: 30px 0px 0px 0px;
+  }
+}
+
+
+
+//========================ОСНОВЫЕ БЛОКИ===========================================
+
+._ibg {
+  position: relative;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 60/44 * 100%;
+
+  @media (max-width: $md3 + px) {
+    font-size: 37px;
+  }
+
+}
+
+.text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23/16 * 100%;
+}
+
+.btn {
+  margin: 0 0 25px 0;
+}
+
+.title-posts {
+  font-size: 22px;
+
+  @media (max-width: $md3 + px) {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  // .social__item
+
+  &__item {
+    transition: color 0.3s ease 0s;
+    color: inherit;
+    margin: 0 17px;
+
+    @media (min-width: $md2+px) {
+      &:hover {
+        color: #ff6464;
+      }
+    }
+  }
+}
+
+.header ._active {
+  color: #ff6464;
+}
+
+.category {
+  font-size: 20px;
+  color: #8695A4;
+  margin: 0 0 0px 25px;
+
+  @media (max-width: $md3+px) {
+    font-size: 16px;
+  }
+}

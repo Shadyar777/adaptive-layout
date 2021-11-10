@@ -1,0 +1,33 @@
+// =============================<BUTTONS (a.btn-tab)>==============================================
+
+.btn {
+  display: inline-flex;
+  padding: 0 0;
+  background-color: #FF6464;
+  border-radius: 2px;
+  border-radius: 2px;
+  padding: 0 20px;
+  height: 47px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  line-height: 29/20 * 100%;  // 29 - в макете делем на шрифт
+
+  align-items: center;
+  justify-content: center;
+  text-align: center; // если кнопке будет много текста
+
+  transition: background-color 0.3s ease 0s;
+  
+    @media (min-width: $md2 + px) { // 992
+    &:hover {
+      background-color: #a14141;
+    }
+
+    &._fw {
+      width: 100%;
+    }
+  }
+}
+
+// ===============================================================================================

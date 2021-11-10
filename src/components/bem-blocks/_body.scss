@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&family=Inter:wght@700&family=Rubik:wght@300;400;500;700&display=swap&subset=cyrillic-ext');
+$fontFamily : "Heebo";
+
+body {
+  font-family: $fontFamily, sans-serif;
+  color: #21243D;
+  font-size: 14px;
+
+  &._lock {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%; // Чтобы прижать футер
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  &._loaded {}
+}
+
+// Цвета
+$Primary : #FF6464;
+$Secondry : #00A8CC;
+$Dark: #21243D;
+$Light : #8695A4;
+
+// Размеры экрана
+$minWidth : 320px;
+$maxWidth : 1152;
+$maxWidthContainer : 856;
+$md1 : $maxWidthContainer+12;
+$md2 : 991.98;
+$md3 : 767.98;
+$md4 : 479.98;
+$md4 : 320.98;
+
+
+// ==============ОСНОВНАЯ СЕТКА=========================
+._container {
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+
+  @media (max-width: $md1+px) {
+    max-width: 750px;
+  }
+
+  // Планшет и мобилки
+  @media (max-width: $md2+px) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+// =====================================================

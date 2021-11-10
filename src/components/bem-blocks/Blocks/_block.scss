@@ -1,0 +1,106 @@
+.blocks {
+  padding-bottom: 50px; // Если указать так padding-bottom то не будет конфликты с _container
+
+  @media (max-width: $md3+px) {
+    padding-bottom: 30px;
+  }
+
+  // .blocks__container
+
+  &__container {}
+}
+
+.block {
+
+  // .block__title
+  &__title {
+    margin: 0px 0px 55px 0px;
+
+    @media (max-width: $md3+px) {
+      margin: 0px 0px 20px 0px;
+
+    }
+  }
+
+
+  // .block__items
+
+  &__items {
+    margin: 0px 0px 30px 0px;
+    padding: 0px 0px 30px 0px;
+    border-bottom: 1px solid #ada9a9;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+  // .block__article-name
+
+  &__article-name {
+    display: block;
+    font-weight: 500;
+    margin: 0px 0px 10px 0px;
+
+    font-size: 30px;
+    line-height: 44/30*100%;
+    color: inherit;
+    transition: color 0.3s ease 0s;
+
+
+
+    @media (min-width: $md2+px) {
+      &:hover {
+        color: #ff6464;
+      }
+    }
+
+    @media (max-width: $md3+px) {
+      margin: 0px 0px 8px 0px;
+      font-size: 26px;
+
+    }
+  }
+
+  // .block__info
+
+  &__info {
+    display: flex;
+    align-items: center;
+
+  }
+
+  // .block__date
+
+  &__date {
+    font-size: 20px;
+    line-height: 29/20*100%;
+    color: #21243D;
+    margin: 0px 15px 0px 0px;
+
+    @media (max-width: $md3+px) {
+      font-size: 16px;
+    }
+  }
+
+  // .block__separator
+
+  &__separator {
+    font-size: 20px;
+
+    @media (max-width: $md3+px) {
+      font-size: 16px;
+    }
+  }
+
+  // .block__category
+
+  &__category {}
+
+  // .block__text
+
+  &__text {
+    margin: 15px 0px 0px 0px;
+  }
+}
